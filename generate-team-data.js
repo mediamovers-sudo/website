@@ -32,13 +32,14 @@ const teamMembers = [
   { id: 'debashis', name: 'Debashis Panda', role: 'Media Crew', image: 'assets/Debashis.jpg' }
 ];
 
-// Generate blank teamData object
+// Generate blank teamData object without 'assets/' prefix
 const teamData = {};
 teamMembers.forEach(member => {
   teamData[member.id] = {
     name: member.name,
     role: member.role,
-    image: member.image,
+    // This removes the "assets/" prefix from the string
+    image: member.image.replace('assets/', ''), 
     skills: [],
     education: ''
   };
