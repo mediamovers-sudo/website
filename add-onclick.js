@@ -28,10 +28,11 @@ const imageToId = {
 
 // Replace each team card that doesn't already have clickable class
 Object.entries(imageToId).forEach(([filename, id]) => {
-  const regex = new RegExp(`<div class="team-card">\\s*<img src="assets/${filename.replace('.', '\\.')}`, 'g');
-  html = html.replace(regex, `<div class="team-card clickable" onclick="openModal('${id}')">\\n            <img src="assets/${filename}`);
+  const regex = new RegExp(`<div class="team-card">\\s*<img src="${filename.replace('.', '\\.')}`, 'g');
+  html = html.replace(regex, `<div class="team-card clickable" onclick="openModal('${id}')">\\n            <img src="${filename}`);
 });
 
 // Write the updated HTML
 fs.writeFileSync('index.html', html);
 console.log('Successfully added onclick to all remaining team cards!');
+
