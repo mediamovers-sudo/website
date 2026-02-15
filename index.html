@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The MediaMovers - PR Cell of NIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <div class="logo-container">
+          <img src="assets/logo-left.png" alt="Left Logo" class="header-logo">
+        </div>
+        <a href="#" class="logo"><span class="script-font">The</span> Media<span>Movers</span></a>
+      </div>
+
+      <div class="header-right">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container desktop-only">
+          <img src="assets/logo-right.jpg" alt="Right Logo" class="header-logo">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>We Are<br><span class="hero-the">The</span> <span class="hero-media">Media</span><span
+          class="hero-movers">Movers</span></h1>
+      <p class="subtitle">(The Official Creative Society of NIST)</p>
+      <p class="description">Bridging the gap between innovation and communication. We amplify stories and connect
+        communities.</p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <p>
+          The MediaMovers is the official creative society of NIST University, initiated by the PR Cell to empower
+          students to explore, connect, and grow in today’s dynamic digital ecosystem. It serves as a vibrant hub for
+          students passionate about Social Media Content Creation, Blogging, Anchoring, Creative Writing,
+          Cinematography, Video Editing, Photography, Graphic Design, Media Strategy, Art, and Visual Communication.
+
+          The society provides hands-on opportunities to work on real-time university projects, manage digital
+          campaigns, and create impactful media content that shapes NIST’s online presence. It nurtures creativity,
+          collaboration, and professional growth while encouraging members to bring innovative ideas to life.
+
+          At its core, The MediaMovers represents the creative heartbeat of NIST - where imagination meets execution and
+          stories find their voice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+        <div class="underline"></div>
+      </div>
+
+      <!-- Advisor -->
+      <div class="team-group">
+        <h3 class="group-title">Advisor</h3>
+        <div class="team-grid single-card">
+          <div class="team-card clickable" onclick="openModal('pitambar')">
+            <img src="assets/Pitambar.jpeg" alt="Pitambar Sahu" class="card-img">
+            <div class="card-content">
+              <h4>Pitambar Sahu</h4>
+              <p class="role">Faculty Advisor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coordinator -->
+      <div class="team-group">
+        <h3 class="group-title">Coordinators</h3>
+        <div class="team-grid">
+          <div class="team-card clickable" onclick="openModal('giridhari')">
+            <img src="assets/Giridhari.jpg" alt="Giridhari Padhy" class="card-img">
+            <div class="card-content">
+              <h4>Giridhari Padhy</h4>
+              <p class="role">Coordinator (Media Production)</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('meghaa')">
+            <img src="assets/Meghaa.png" alt="P. D. Meghaa Rani" class="card-img">
+            <div class="card-content">
+              <h4>P. D. Meghaa Rani</h4>
+              <p class="role">Coordinator (Creative Projects)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Lead -->
+      <div class="team-group">
+        <h3 class="group-title">Leads</h3>
+        <div class="team-grid">
+          <div class="team-card clickable" onclick="openModal('simran')">
+            <img src="assets/Simran.png" alt="D. Simran Patra" class="card-img">
+            <div class="card-content">
+              <h4>D.Simran Patra</h4>
+              <p class="role">Lead, Art & Visuals</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('meghna')">
+            <img src="assets/Meghna.png" alt="Meghna Panda" class="card-img">
+            <div class="card-content">
+              <h4>Meghna Panda</h4>
+              <p class="role">Lead, Communications & Media</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('ritesh')">
+            <img src="assets/Ritesh.jpg" alt="Challa Ritesh" class="card-img">
+            <div class="card-content">
+              <h4>Challa Ritesh</h4>
+              <p class="role">Lead, Reels & Shorts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Associate -->
+      <div class="team-group">
+        <h3 class="group-title">Associates</h3>
+        <div class="team-grid">
+          <div class="team-card clickable" onclick="openModal('snehal')">
+            <img src="assets/Snehal.jpg" alt="Snehal Panda" class="card-img">
+            <div class="card-content">
+              <h4>Snehal Panda</h4>
+              <p class="role">Associate, Photography</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('komalkant')">
+            <img src="assets/Komalkant.png" alt="Komalkant Mohapatro" class="card-img">
+            <div class="card-content">
+              <h4>Komalkant Mohapatro</h4>
+              <p class="role">Associate, Graphic Design</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('slok')">
+            <img src="assets/Slok.png" alt="Slok Samarth Swain" class="card-img">
+            <div class="card-content">
+              <h4>Slok Samarth Swain</h4>
+              <p class="role">Associate, Creative Writing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Crew -->
+      <div class="team-group">
+        <h3 class="group-title">Media Crew</h3>
+        <div class="team-grid">
+          <div class="team-card clickable" onclick="openModal('pratik')">
+            <img src="assets/Pratik.jpg" alt="Pratik Prusty" class="card-img">
+            <div class="card-content">
+              <h4>Pratik Prusty</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('sunil')"> <img src="assets/Sunil.jpg"
+              alt="Sunil Kumar Sasamal" class="card-img">
+            <div class="card-content">
+              <h4>Sunil Kumar Sasamal</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('pratikhya')"> <img src="assets/Pratikhya.jpg"
+              alt="Pratikhya Acharya" class="card-img">
+            <div class="card-content">
+              <h4>Pratikhya Acharya</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('rudra')"> <img src="assets/Rudra.jpg"
+              alt="Rudra Prasad Panda" class="card-img">
+            <div class="card-content">
+              <h4>Rudra Prasad Panda</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('saumya')">
+            <img src="assets/Saumya.jpeg" alt="Saumya Saurabha Jena" class="card-img">
+            <div class="card-content">
+              <h4>Saumya Saurabha Jena</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('subham')"> <img src="assets/Subham.jpg"
+              alt="Subham Kumar Mishra" class="card-img">
+            <div class="card-content">
+              <h4>Subham Kumar Mishra</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('aniruddha')"> <img src="assets/Aniruddha.jpg"
+              alt="Aniruddha Sahu" class="card-img">
+            <div class="card-content">
+              <h4>Aniruddha Sahu</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('manoswini')"> <img src="assets/Manoswini.jpg"
+              alt="Manoswini Nahak" class="card-img">
+            <div class="card-content">
+              <h4>Manoswini Nahak</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('adarsh')"> <img src="assets/Adarsh.jpg"
+              alt="Adarsh Acharya" class="card-img">
+            <div class="card-content">
+              <h4>Adarsh Acharya</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('kartik')"> <img src="assets/Kartik.jpg"
+              alt="P. Kartik Reddy" class="card-img">
+            <div class="card-content">
+              <h4>P. Kartik Reddy</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('subhankhi')"> <img src="assets/Subhankhi.jpg"
+              alt="Subhankhi Sahu" class="card-img">
+            <div class="card-content">
+              <h4>Subhankhi Sahu</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('bharat')"> <img src="assets/Bharat.png"
+              alt="D. Bharat Rao" class="card-img">
+            <div class="card-content">
+              <h4>D. Bharat Rao</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('sandeep')"> <img src="assets/Sandeep.jpg"
+              alt="Sandeep Kumar Pradhan" class="card-img">
+            <div class="card-content">
+              <h4>Sandeep Kumar Pradhan</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('maheswar')"> <img src="assets/Maheswar.jpg"
+              alt="B. Maheswar" class="card-img">
+            <div class="card-content">
+              <h4>B. Maheswar</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('hounouvi')"> <img src="assets/Hounouvi.jpg"
+              alt="Hounouvi Folly Boris Daniel" class="card-img">
+            <div class="card-content">
+              <h4>Hounouvi Folly Boris Daniel</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('akhil')"> <img src="assets/Akhil.jpg"
+              alt="Akhil Kumar Panigrahi" class="card-img">
+            <div class="card-content">
+              <h4>Akhil Kumar Panigrahi</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('priyanka')"> <img src="assets/Priyanka.jpg"
+              alt="Priyanka Panigrahy" class="card-img">
+            <div class="card-content">
+              <h4>Priyanka Panigrahy</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('shivanshi')"> <img src="assets/Shivanshi.jpg"
+              alt="Shivanshi Padhi" class="card-img">
+            <div class="card-content">
+              <h4>Shivanshi Padhi</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('arpita')">
+            <img src="assets/ARPITA.jpg" alt="Arpita Rout" class="card-img">
+            <div class="card-content">
+              <h4>Arpita Rout</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+          <div class="team-card clickable" onclick="openModal('subhransu')">
+            <img src="assets/Subhransu.jpg" alt="Subhransu Sekhar Pradhan" class="card-img">
+            <div class="card-content">
+              <h4>Subhransu Sekhar Pradhan</h4>
+              <p class="role">Media Crew</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-section footer-about">
+          <div class="footer-logo">
+            <img src="assets/logo-left.png" alt="MediaMovers Logo" class="footer-logo-img">
+            <span class="footer-logo-text"><span class="script-font">The</span> Media<span>Movers</span></span>
+          </div>
+          <p class="footer-description">Your trusted partner in creative storytelling and media excellence. We bridge
+            the gap between innovation and communication with cutting-edge content creation.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/the_mediamovers/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/themediamovers/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>EDC 203, NIST University<br>Berhampur, Odisha - 761008</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:mediamovers@nist.edu">mediamovers@nist.edu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2023 The MediaMovers - NIST PR Cell. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Team Member Modal -->
+  <div id="teamModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="" class="modal-img">
+        <h2 id="modalName"></h2>
+        <p id="modalRole" class="modal-role"></p>
+
+        <div class="modal-section">
+          <h3>Skills</h3>
+          <div id="modalSkills" class="skills-list"></div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Education</h3>
+          <p id="modalEducation"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-list a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+
+    // Team member data
+    const teamData = {
+      pitambar: { name: 'Pitambar Sahu', role: 'Faculty Advisor', image: 'assets/Pitambar.jpeg', skills: [], education: '' },
+      giridhari: { name: 'Giridhari Padhy', role: 'Coordinator (Media Production)', image: 'assets/Giridhari.jpg', skills: [], education: '' },
+      meghaa: { name: 'P. D. Meghaa Rani', role: 'Coordinator (Creative Projects)', image: 'assets/Meghaa.png', skills: [], education: '' },
+      simran: { name: 'D.Simran Patra', role: 'Lead, Art & Visuals', image: 'assets/Simran.png', skills: [], education: '' },
+      meghna: { name: 'Meghna Panda', role: 'Lead, Communications & Media', image: 'assets/Meghna.png', skills: [], education: '' },
+      ritesh: { name: 'Challa Ritesh', role: 'Lead, Reels & Shorts', image: 'assets/Ritesh.jpg', skills: [], education: '' },
+      komalkant: { name: 'Komalkant Mohapatro', role: 'Associate, Photography', image: 'assets/Komalkant.png', skills: [], education: '' },
+      slok: { name: 'Slok Samarth Swain', role: 'Associate, Creative Writing', image: 'assets/Slok.png', skills: [], education: '' },
+      saumya: { name: 'Saumya Saurabha Jena', role: 'Associate, Cinematography', image: 'assets/Saumya.jpeg', skills: [], education: '' },
+      pratik: { name: 'Pratik Prusty', role: 'Media Crew', image: 'assets/Pratik.jpg', skills: [], education: '' },
+      sunil: { name: 'Sunil Kumar Sasamal', role: 'Media Crew', image: 'assets/Sunil.jpg', skills: [], education: '' },
+      pratikhya: { name: 'Pratikhya Acharya', role: 'Media Crew', image: 'assets/Pratikhya.jpg', skills: [], education: '' },
+      rudra: { name: 'Rudra Prasad Panda', role: 'Media Crew', image: 'assets/Rudra.jpg', skills: [], education: '' },
+      subham: { name: 'Subham Kumar Mishra', role: 'Media Crew', image: 'assets/Subham.jpg', skills: [], education: '' },
+      aniruddha: { name: 'Aniruddha Sahu', role: 'Media Crew', image: 'assets/Aniruddha.jpg', skills: [], education: '' },
+      manoswini: { name: 'Manoswini Nahak', role: 'Media Crew', image: 'assets/Manoswini.jpg', skills: [], education: '' },
+      adarsh: { name: 'Adarsh Acharya', role: 'Media Crew', image: 'assets/Adarsh.jpg', skills: [], education: '' },
+      kartik: { name: 'P. Kartik Reddy', role: 'Media Crew', image: 'assets/Kartik.jpg', skills: [], education: '' },
+      subhankhi: { name: 'Subhankhi Sahu', role: 'Media Crew', image: 'assets/Subhankhi.jpg', skills: [], education: '' },
+      bharat: { name: 'D. Bharat Rao', role: 'Media Crew', image: 'assets/Bharat.png', skills: [], education: '' },
+      sandeep: { name: 'Sandeep Kumar Pradhan', role: 'Media Crew', image: 'assets/Sandeep.jpg', skills: [], education: '' },
+      maheswar: { name: 'B. Maheswar', role: 'Media Crew', image: 'assets/Maheswar.jpg', skills: [], education: '' },
+      hounouvi: { name: 'Hounouvi Folly Boris Daniel', role: 'Media Crew', image: 'assets/Hounouvi.jpg', skills: [], education: '' },
+      akhil: { name: 'Akhil Kumar Panigrahi', role: 'Media Crew', image: 'assets/Akhil.jpg', skills: [], education: '' },
+      priyanka: { name: 'Priyanka Panigrahy', role: 'Media Crew', image: 'assets/Priyanka.jpg', skills: [], education: '' },
+      shivanshi: { name: 'Shivanshi Padhi', role: 'Media Crew', image: 'assets/Shivanshi.jpg', skills: [], education: '' },
+      arpita: { name: 'Arpita Rout', role: 'Media Crew', image: 'assets/ARPITA.jpg', skills: [], education: '' },
+      subhransu: { name: 'Subhransu Sekhar Pradhan', role: 'Media Crew', image: 'assets/Subhransu.jpg', skills: [], education: '' },
+      snehal: { name: 'Snehal Panda', role: 'Associate, Photography', image: 'assets/Snehal.jpg', skills: [], education: '' }
+    };
+
+    // Modal functions
+    function openModal(memberId) {
+      const member = teamData[memberId];
+      if (!member) return;
+
+      document.getElementById('modalImg').src = member.image;
+      document.getElementById('modalImg').alt = member.name;
+      document.getElementById('modalName').textContent = member.name;
+      document.getElementById('modalRole').textContent = member.role;
+
+      // Display skills
+      const skillsContainer = document.getElementById('modalSkills');
+      skillsContainer.innerHTML = member.skills.map(skill =>
+        `<span class="skill-tag">${skill}</span>`
+      ).join('');
+
+      // Display education
+      document.getElementById('modalEducation').textContent = member.education;
+
+      // Show modal
+      document.getElementById('teamModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('teamModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+      const modal = document.getElementById('teamModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
