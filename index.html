@@ -15,7 +15,6 @@
 
 <body>
 
-  <!-- Header -->
   <header class="header">
     <div class="header-container">
       <div class="header-left">
@@ -26,7 +25,6 @@
       </div>
 
       <div class="header-right">
-        <!-- Hamburger Menu Button -->
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span>
           <span></span>
@@ -48,7 +46,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container hero-content">
       <h1>We Are<br><span class="hero-the">The</span> <span class="hero-media">Media</span><span
@@ -60,7 +57,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <div class="section-header">
@@ -85,7 +81,6 @@
     </div>
   </section>
 
-  <!-- Team Section -->
   <section id="team" class="team">
     <div class="container">
       <div class="section-header">
@@ -93,7 +88,6 @@
         <div class="underline"></div>
       </div>
 
-      <!-- Advisor -->
       <div class="team-group">
         <h3 class="group-title">Advisor</h3>
         <div class="team-grid single-card">
@@ -107,7 +101,6 @@
         </div>
       </div>
 
-      <!-- Coordinator -->
       <div class="team-group">
         <h3 class="group-title">Coordinators</h3>
         <div class="team-grid">
@@ -129,7 +122,6 @@
       </div>
 
 
-      <!-- Lead -->
       <div class="team-group">
         <h3 class="group-title">Leads</h3>
         <div class="team-grid">
@@ -157,7 +149,6 @@
         </div>
       </div>
 
-      <!-- Associate -->
       <div class="team-group">
         <h3 class="group-title">Associates</h3>
         <div class="team-grid">
@@ -185,7 +176,6 @@
         </div>
       </div>
 
-      <!-- Media Crew -->
       <div class="team-group">
         <h3 class="group-title">Media Crew</h3>
         <div class="team-grid">
@@ -332,17 +322,12 @@
         </div>
       </div>
     </div>
-    </div>
-
-    </div>
   </section>
 
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <!-- Logo and Description -->
         <div class="footer-section footer-about">
           <div class="footer-logo">
             <img src="logo-left.png" alt="MediaMovers Logo" class="footer-logo-img">
@@ -372,7 +357,6 @@
           </div>
         </div>
 
-        <!-- Contact Info -->
         <div class="footer-section">
           <h3>Contact Us</h3>
           <ul class="footer-contact">
@@ -396,14 +380,12 @@
         </div>
       </div>
 
-      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <p>&copy; 2023 The MediaMovers - NIST PR Cell. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Team Member Modal -->
   <div id="teamModal" class="modal">
     <div class="modal-content">
       <span class="modal-close" onclick="closeModal()">&times;</span>
@@ -446,35 +428,35 @@
 
     // Team member data
     const teamData = {
-      pitambar: { name: 'Pitambar Sahu', role: 'Faculty Advisor', image: 'assets/Pitambar.jpeg', skills: [], education: '' },
-      giridhari: { name: 'Giridhari Padhy', role: 'Coordinator (Media Production)', image: 'assets/Giridhari.jpg', skills: [], education: '' },
-      meghaa: { name: 'P. D. Meghaa Rani', role: 'Coordinator (Creative Projects)', image: 'assets/Meghaa.png', skills: [], education: '' },
-      simran: { name: 'D.Simran Patra', role: 'Lead, Art & Visuals', image: 'assets/Simran.png', skills: [], education: '' },
-      meghna: { name: 'Meghna Panda', role: 'Lead, Communications & Media', image: 'assets/Meghna.png', skills: [], education: '' },
-      ritesh: { name: 'Challa Ritesh', role: 'Lead, Reels & Shorts', image: 'assets/Ritesh.jpg', skills: [], education: '' },
-      komalkant: { name: 'Komalkant Mohapatro', role: 'Associate, Photography', image: 'assets/Komalkant.png', skills: [], education: '' },
-      slok: { name: 'Slok Samarth Swain', role: 'Associate, Creative Writing', image: 'assets/Slok.png', skills: [], education: '' },
-      saumya: { name: 'Saumya Saurabha Jena', role: 'Associate, Cinematography', image: 'assets/Saumya.jpeg', skills: [], education: '' },
-      pratik: { name: 'Pratik Prusty', role: 'Media Crew', image: 'assets/Pratik.jpg', skills: [], education: '' },
-      sunil: { name: 'Sunil Kumar Sasamal', role: 'Media Crew', image: 'assets/Sunil.jpg', skills: [], education: '' },
-      pratikhya: { name: 'Pratikhya Acharya', role: 'Media Crew', image: 'assets/Pratikhya.jpg', skills: [], education: '' },
-      rudra: { name: 'Rudra Prasad Panda', role: 'Media Crew', image: 'assets/Rudra.jpg', skills: [], education: '' },
-      subham: { name: 'Subham Kumar Mishra', role: 'Media Crew', image: 'assets/Subham.jpg', skills: [], education: '' },
-      aniruddha: { name: 'Aniruddha Sahu', role: 'Media Crew', image: 'assets/Aniruddha.jpg', skills: [], education: '' },
-      manoswini: { name: 'Manoswini Nahak', role: 'Media Crew', image: 'assets/Manoswini.jpg', skills: [], education: '' },
-      adarsh: { name: 'Adarsh Acharya', role: 'Media Crew', image: 'assets/Adarsh.jpg', skills: [], education: '' },
-      kartik: { name: 'P. Kartik Reddy', role: 'Media Crew', image: 'assets/Kartik.jpg', skills: [], education: '' },
-      subhankhi: { name: 'Subhankhi Sahu', role: 'Media Crew', image: 'assets/Subhankhi.jpg', skills: [], education: '' },
-      bharat: { name: 'D. Bharat Rao', role: 'Media Crew', image: 'assets/Bharat.png', skills: [], education: '' },
-      sandeep: { name: 'Sandeep Kumar Pradhan', role: 'Media Crew', image: 'assets/Sandeep.jpg', skills: [], education: '' },
-      maheswar: { name: 'B. Maheswar', role: 'Media Crew', image: 'assets/Maheswar.jpg', skills: [], education: '' },
-      hounouvi: { name: 'Hounouvi Folly Boris Daniel', role: 'Media Crew', image: 'assets/Hounouvi.jpg', skills: [], education: '' },
-      akhil: { name: 'Akhil Kumar Panigrahi', role: 'Media Crew', image: 'assets/Akhil.jpg', skills: [], education: '' },
-      priyanka: { name: 'Priyanka Panigrahy', role: 'Media Crew', image: 'assets/Priyanka.jpg', skills: [], education: '' },
-      shivanshi: { name: 'Shivanshi Padhi', role: 'Media Crew', image: 'assets/Shivanshi.jpg', skills: [], education: '' },
-      arpita: { name: 'Arpita Rout', role: 'Media Crew', image: 'assets/ARPITA.jpg', skills: [], education: '' },
-      subhransu: { name: 'Subhransu Sekhar Pradhan', role: 'Media Crew', image: 'assets/Subhransu.jpg', skills: [], education: '' },
-      snehal: { name: 'Snehal Panda', role: 'Associate, Photography', image: 'assets/Snehal.jpg', skills: [], education: '' }
+      pitambar: { name: 'Pitambar Sahu', role: 'Faculty Advisor', image: 'Pitambar.jpeg', skills: [], education: '' },
+      giridhari: { name: 'Giridhari Padhy', role: 'Coordinator (Media Production)', image: 'Giridhari.jpg', skills: [], education: '' },
+      meghaa: { name: 'P. D. Meghaa Rani', role: 'Coordinator (Creative Projects)', image: 'Meghaa.png', skills: [], education: '' },
+      simran: { name: 'D.Simran Patra', role: 'Lead, Art & Visuals', image: 'Simran.png', skills: [], education: '' },
+      meghna: { name: 'Meghna Panda', role: 'Lead, Communications & Media', image: 'Meghna.png', skills: [], education: '' },
+      ritesh: { name: 'Challa Ritesh', role: 'Lead, Reels & Shorts', image: 'Ritesh.jpg', skills: [], education: '' },
+      komalkant: { name: 'Komalkant Mohapatro', role: 'Associate, Photography', image: 'Komalkant.png', skills: [], education: '' },
+      slok: { name: 'Slok Samarth Swain', role: 'Associate, Creative Writing', image: 'Slok.png', skills: [], education: '' },
+      saumya: { name: 'Saumya Saurabha Jena', role: 'Associate, Cinematography', image: 'Saumya.jpeg', skills: [], education: '' },
+      pratik: { name: 'Pratik Prusty', role: 'Media Crew', image: 'Pratik.jpg', skills: [], education: '' },
+      sunil: { name: 'Sunil Kumar Sasamal', role: 'Media Crew', image: 'Sunil.jpg', skills: [], education: '' },
+      pratikhya: { name: 'Pratikhya Acharya', role: 'Media Crew', image: 'Pratikhya.jpg', skills: [], education: '' },
+      rudra: { name: 'Rudra Prasad Panda', role: 'Media Crew', image: 'Rudra.jpg', skills: [], education: '' },
+      subham: { name: 'Subham Kumar Mishra', role: 'Media Crew', image: 'Subham.jpg', skills: [], education: '' },
+      aniruddha: { name: 'Aniruddha Sahu', role: 'Media Crew', image: 'Aniruddha.jpg', skills: [], education: '' },
+      manoswini: { name: 'Manoswini Nahak', role: 'Media Crew', image: 'Manoswini.jpg', skills: [], education: '' },
+      adarsh: { name: 'Adarsh Acharya', role: 'Media Crew', image: 'Adarsh.jpg', skills: [], education: '' },
+      kartik: { name: 'P. Kartik Reddy', role: 'Media Crew', image: 'Kartik.jpg', skills: [], education: '' },
+      subhankhi: { name: 'Subhankhi Sahu', role: 'Media Crew', image: 'Subhankhi.jpg', skills: [], education: '' },
+      bharat: { name: 'D. Bharat Rao', role: 'Media Crew', image: 'Bharat.png', skills: [], education: '' },
+      sandeep: { name: 'Sandeep Kumar Pradhan', role: 'Media Crew', image: 'Sandeep.jpg', skills: [], education: '' },
+      maheswar: { name: 'B. Maheswar', role: 'Media Crew', image: 'Maheswar.jpg', skills: [], education: '' },
+      hounouvi: { name: 'Hounouvi Folly Boris Daniel', role: 'Media Crew', image: 'Hounouvi.jpg', skills: [], education: '' },
+      akhil: { name: 'Akhil Kumar Panigrahi', role: 'Media Crew', image: 'Akhil.jpg', skills: [], education: '' },
+      priyanka: { name: 'Priyanka Panigrahy', role: 'Media Crew', image: 'Priyanka.jpg', skills: [], education: '' },
+      shivanshi: { name: 'Shivanshi Padhi', role: 'Media Crew', image: 'Shivanshi.jpg', skills: [], education: '' },
+      arpita: { name: 'Arpita Rout', role: 'Media Crew', image: 'ARPITA.jpg', skills: [], education: '' },
+      subhransu: { name: 'Subhransu Sekhar Pradhan', role: 'Media Crew', image: 'Subhransu.jpg', skills: [], education: '' },
+      snehal: { name: 'Snehal Panda', role: 'Associate, Photography', image: 'Snehal.jpg', skills: [], education: '' }
     };
 
     // Modal functions
@@ -516,6 +498,5 @@
   </script>
 
 </body>
-
 
 </html>
