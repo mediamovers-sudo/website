@@ -1,0 +1,41 @@
+// Script to help identify the image file names needed
+// Based on the team members, here are the first names for the JPG files:
+
+// Advisor
+Pitambar.jpg
+
+// Coordinators  
+Giridhari.jpg
+Meghaa.jpg (or PD.jpg)
+
+// Leads
+Simran.jpg (or D.jpg)
+Meghna.jpg
+Challa.jpg (or Ritesh.jpg)
+
+// Associates
+Snehal.jpg
+Komalkant.jpg
+Slok.jpg
+
+// Media Crew (20 members)
+Pratik.jpg
+Sunil.jpg
+Pratikhya.jpg
+Rudra.jpg
+Saumya.jpg
+Subham.jpg
+Aniruddha.jpg
+Manoswini.jpg
+Adarsh.jpg
+Kartik.jpg (or P.jpg)
+Subhankhi.jpg
+Bharat.jpg (or D.jpg)
+Sandeep.jpg
+Maheswar.jpg (or B.jpg)
+Hounouvi.jpg
+Akhil.jpg
+Priyanka.jpg
+Shivanshi.jpg
+Arpita.jpg
+Subhransu.jpg
