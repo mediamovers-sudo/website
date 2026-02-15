@@ -1008,6 +1008,25 @@ img {
     font-size: 1.2rem;
   }
 
+  .hero h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .hero-the {
+    font-size: 2.2rem;
+  }
+
+  .hero-media,
+  .hero-movers {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 30px;
